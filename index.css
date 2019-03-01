@@ -1,0 +1,31 @@
+body{
+  background-color: #e0ffff;
+}
+
+h1{
+  font-weight: bolder;
+  text-decoration: underline;
+  color: rgb(180,100,0);
+}
+
+h2{
+  padding-top: 25px;
+  color: green;
+}
+
+p{
+  font-size: 22px;
+  font-style: oblique;
+}
+
+ul{
+  font-size:18px;
+  font-style: italic;
+  color: rgb(150,0,250);
+}
+
+ol{
+  font-size: 18px;
+  font-style: oblique;
+  color: rgb(150,0,250);
+}
