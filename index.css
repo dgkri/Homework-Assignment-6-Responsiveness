@@ -1,16 +1,45 @@
-#body{
+body{
   background-color: #e0ffff;
+  margin-top: 0;
 }
+
+nav{
+  background-color: orange;
+  opacity: 0.6;
+  border-radius: 10px;
+}
+
+nav ul{
+  padding: 0px 0px;
+  display: flex;
+  list-style: none;
+  margin-top: 0;
+}
+
+nav ul li{
+  font-size: 25px;
+  font-weight: bold;
+  width: 25%;
+  padding: 0px 0px;
+  text-align: center;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+nav a{
+  color:green;
+}
+
+nav ul li:hover{
+  background-color:#e0ffff;
+}
+
 /* for the heading of the page*/
 #title{
   font-weight: bolder;
   text-decoration: underline;
   color: rgb(180,100,0);
-}
-
-h2{
-  padding-top: 25px;
-  color: green;
+  font-size: 35px;
 }
 
 p{
@@ -22,38 +51,52 @@ p span{
   font-style: italic;
   font-weight: bold;
 }
+
 /*first span*/
-#sidfirst{
+#first_span{
   font-style: oblique;
   font-weight: normal;
   color: red;
 }
+
 /*last span*/
-#sidlast{
+#last_span{
   text-decoration-line: underline;
 }
 
-/*setting font size and color of all list items*/
-.lists{
-  font-size:18px;
-  font-style: italic;
-  color: rgb(150,0,250);
+h2{
+  margin-top: 0px;
+  padding-top: 25px;
+  color: green;
+  font-size: 30px;
+}
+
+main{
+  display: flex;
+}
+
+#main_section_I{
+  padding-left: 40px;
+  width:40%;
 }
 
 /*Changing bullets*/
 /* removing the default padding from the inner ul*/
-#bullet-chang ul{
+#ingredients_outer_ul ul{
   padding-left: 0;
 }
 /*changing default style to none and adding custom padding to the inner ul list items*/
-#bullet-change > ul > li{
+#ingredients_outer_ul > ul > li{
   list-style: none;
   padding-left: 20px;
   padding-top: 10px;
   position: relative;
+  font-size: 21px;
+  font-style: italic;
+  color: rgb(150,0,250);
 }
 /*Adding custom bullets with wit settings*/
- #bullet-change > ul > li::before{
+ #ingredients_outer_ul > ul > li::before{
     content: '';
     width: 14px;
     height: 14px;
@@ -63,31 +106,54 @@ p span{
     background-position: center;
     left: 0;
 }
+
 /*adding padding to the top of 2nd list intem of outer ul*/
-#bullet-change > #ulitwo{
+#ingredients_outer_ul_liII{
   padding-top: 25px;
 }
 
+#main_section_II{
+  width:60%
+}
+
 /*Change list style type to roman*/
-#outer-ol{
+#making_outer_ol{
   list-style-type: upper-roman;
 }
 
-#outer-ol > ol{
+#making_outer_ol > ol{
   list-style-type: lower-roman;
 }
 /*Adding custom padding to li of ol*/
-#outer-ol > ol > li{
+#making_outer_ol > ol > li{
   padding-left: 20px;
   padding-top: 10px;
   position: relative;
 }
 
-#oli-two{
+#making_outer_ol , #making_outer_ol_liII{
+  font-size: 26px;
+  font-style: italic;
+  color: rgb(150,0,250);
+}
+
+#making_outer_ol_liII{
   padding-top: 25px;
+}
+
+/*setting font size and color of all list items*/
+#u_r_l{
+  font-size:18px;
+  font-style: italic;
+  color: rgb(150,0,250);
 }
 
 /*Allignment of image*/
 #images {
   text-align: center;
+}
+
+#images img{
+  border: 2px solid orange;
+  border-radius: 20px;
 }

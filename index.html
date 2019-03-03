@@ -6,12 +6,21 @@
     <title>My-Favourite-Food</title>
     <link rel="stylesheet" href="index.css">
   </head>
-  <body id="body">
+  <body>
+
+    <nav>
+      <ul>
+        <li> <a href="#ingred">Ingredients</a> </li>
+        <li> <a href="#pasta_making">Pasta Making</a> </li>
+        <li> <a href="#final_dish">Final Dish</a> </li>
+        <li> <a href="#other_recipes">Other Recipes</a> </li>
+      </ul>
+    </nav>
 
     <header>
       <h1 id="title">Red Sauce Pasta <img src="images/emoji2.png" alt="emoji2" width="25px" height="25px"></h1>
-    <!-- About Pasta -->
-      <p>Pasta is a staple food of <span id="sidfirst">traditional italian cuisine</span>.
+    <!-- About Pasta (my thoughts about pasta) -->
+      <p>Pasta is a staple food of <span id="first_span">traditional italian cuisine</span>.
         It is a type of noodle typically made from an unleavened dough of
         a durum wheat flour mixed with water or egg, and formed into sheet
         or various shapes, then cooked by boiling or baking. And it is
@@ -20,10 +29,10 @@
     </header>
 
     <main>
-      <section>
+      <section id="main_section_I">
         <h2>Ingredients <img src="images/emoji3.png" alt="emoji3" width="20px" height="20px"></h2>
         <!-- Unordered list of ingredients -->
-        <ul class="lists" id="bullet-change">
+        <ul  id="ingredients_outer_ul">
           <li><strong>For the Tomato Sauce <img src="images/emoji6.png" alt="emoji6" width="15px" height="15px"> :</strong></li>
           <!-- Inner Unordered list -->
           <ul>
@@ -40,9 +49,9 @@
             <li>To saute Oil</li>
           </ul>
 
-          <li id="ulitwo"><strong>For the Pasta <img src="images/emoji5.png" alt="emoji5" width="15px" height="15px"> : </strong></li>
+          <li id="ingredients_outer_ul_liII"><strong>For the Pasta <img src="images/emoji5.png" alt="emoji5" width="15px" height="15px"> : </strong></li>
           <!-- 2nd inner Unordered list -->
-          <ul id="tnd-ul">
+          <ul>
             <li>110 Gram Pasta</li>
             <li>3 Cups Water</li>
             <li>A pinch of Salt</li>
@@ -50,10 +59,10 @@
         </ul>
       </section>
 
-      <section>
+      <section id="main_section_II">
         <h2>How to make Red Sauce Pasta <img src="images/emoji4.png" alt="emoji4" width="20px" height="20px"></h2>
         <!-- Ordered list of steps for preparing pasta -->
-        <ol class="lists" id="outer-ol">
+        <ol id="making_outer_ol">
           <li><strong>Prepare Sauce <img src="images/emoji1.png" alt="emoji1" width="15px" height="15px"> :</strong></li>
           <!-- Inner Ordered list -->
           <ol>
@@ -67,7 +76,7 @@
             <li>Add basil leaves and keep aside <img src="images/emoji03.png" alt="emoji03" width="12px" height="12px"></li>
           </ol>
 
-          <li id="oli-two"><strong>Prepare Pasta <img src="images/emoji7.png" alt="emoji7" width="15px" height="15px"> :</strong></li>
+          <li id="making_outer_ol_liII"><strong>Prepare Pasta <img src="images/emoji7.png" alt="emoji7" width="15px" height="15px"> :</strong></li>
           <!-- 2nd inner ordered list -->
           <ol>
             <li>Boil water with salt.</li>
@@ -77,17 +86,18 @@
 
         </ol>
       </section>
+      </main>
 
       <section>
         <!--About its Taste -->
-        <p>The <span id="sidlast">final dish</span> looks very delicious. Its taste is a unique combination of
+        <p>The <span id="last_span">final dish</span> looks very delicious. Its taste is a unique combination of
            five tastants—sweet, sour, salty, bitter, and savory (umami) compounds—as
             well as the aroma of volatiles, many from the breakdown of the carotenoid pigments,
             such as the bright red antioxidant lycopene.
         </p>
 
         <!-- Displaying Image -->
-        <h2>Final Dish <img src="images/emojil.png" alt="emojil" width="20px" height="20px"></h2>
+        <h2 id="final_dish">Final Dish <img src="images/emojil.png" alt="emojil" width="20px" height="20px"></h2>
       <div id="images">
           <img src="images/pasta.jpeg" alt="Pasta Image" width="600px" height="400px"><br>
         </div>
@@ -95,12 +105,12 @@
       </section>
 
       <section>
-        <h2>Other recipes <img src="images/emojic.png" alt="emojic" width="20px" height="20px"></h2>
+        <h2 id="other_recipes">Other recipes <img src="images/emojic.png" alt="emojic" width="20px" height="20px"></h2>
         <p>These are other, some of the best recipes of the <em>red sauce pasta</em>
           in the internet.
         </p>
         <!--unordered list of links -->
-        <ul class="lists">
+        <ul id="u_r_l">
           <li><a href="https://www.foodnetwork.com/recipes/classic-red-sauce-3362824">Classic Red Sauce Recipe</a></li>
           <li><a href="https://www.tarladalal.com/Pasta-in-Red-Sauce-37563r">Red sauce pasta recipe</a></li>
           <li><a href="https://recipes.timesofindia.com/recipes/red-sauce-pasta/rs54311206.cms">Pasta in red sauce recipe</a></li>
@@ -108,7 +118,6 @@
           <li><a href="https://tasty.co/recipe/penne-with-tomato-sauce">Pasta with tomato sauce</a></li>
         </ul>
       </section>
-    </main>
 
     <footer>
       <p>For any other query, just mail <a href="mailto:dgkri0810@gmail.com">me</a>.</p>
