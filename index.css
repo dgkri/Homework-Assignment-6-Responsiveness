@@ -1,5 +1,6 @@
+
 body{
-  background-color: #e0ffff;
+  background-color: rgb(244,255,255);
   margin-top: 0;
 }
 
@@ -172,10 +173,14 @@ main{
   height: auto;
   width: 40%;
 }
+
 /*-------------------------------------------------*/
 
+@media (min-width: 400px) and (max-width: 750px) {
 
-@media (max-width: 750px) {
+  body{
+    background-color: skyblue;
+  }
 
   main{
     display: block;
@@ -202,7 +207,7 @@ main{
 
 /*-------------------------------------------------*/
 
-@media (min-width:  400px) And (max-width: 750px) {
+@media (max-width:  400px) {
 
   main{
     display: block;
@@ -218,6 +223,11 @@ main{
     padding-left: 20px;
     padding-right: 20px;
     width: 90%;
+  }
+
+  #images img{
+    width: 350px;
+    height: auto;
   }
 
 }
